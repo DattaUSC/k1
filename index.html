@@ -177,7 +177,7 @@
 
 								<p class="lead topmargin-sm nobottommargin" style="max-width:520px; font-size:22px; padding-top:10px; line-height: 1.7;">Konviv is a conversational banking solution for banks and credit unions - our AI chatbot provides financial services in English, Spanish, and Spanglish ;)</p>
 							</div>
-							<a href="#" class="button button-dark button-circle button-large t300" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Request a Demo</a>
+							<button id="open-popup-demo" class="button button-dark button-circle button-large t300" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Request a Demo</button>
 						</div>
 
 						<p style="margin:160px 0px 20px 800px; display:block; position:absolute; float:right;"><img style="height:20%; width:90%;" src="images/mainphone.jpg" alt="iPhone" /><br /><span style="font-size:11px; color:#999; margin-left:83px;">Financial Buddy In Your Pocket</span></p>
@@ -605,6 +605,17 @@
 			};
 			document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
 	</script>
+	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+	<script>
+	function showMailingPopUpDemo() {
+	    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"bbe6edd96b05a24089b614b98","lid":"72640749d3"}) })
+	    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	};
+
+	document.getElementById("open-popup-demo").onclick = function() {showMailingPopUpDemo()};
+	</script>
+
 	
 	<!-- Footer Scripts
 	============================================= -->
