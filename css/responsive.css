@@ -1674,7 +1674,7 @@
 		line-height: 150px;
 	}
 
-	.shop:not(.product-1) { margin: 0; }
+	.shop:not(.product-1) { margin: 0 !important; }
 
 	.shop:not(.product-1) .product {
 		margin: 0 0 20px 0;
