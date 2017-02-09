@@ -400,7 +400,7 @@
 
 								<p class="lead topmargin-sm nobottommargin" style="max-width:520px; font-size:22px; padding-top:10px; line-height: 1.7;">Konviv doesn't just talk to you - Konviv learns your behavior and provides you a full suite of tools to manage your finances better. We grow with you.</p>
 
-								<p style="margin-left:-15px; display:block; position:relative; float:left; margin-top:40px;"><button id="open-popup" class="button button-dark button-circle button-large t400" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Sign Up for our Pilot</button></p>
+								<p style="margin-left:-15px; display:block; position:relative; float:left; margin-top:40px;"><button id="open-popup-2" class="button button-dark button-circle button-large t400" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Sign Up for our Pilot</button></p>
 
 								<p style="margin:-300px 0px 0px 580px; display:block; position:absolute; float:right;"><img style="height:90%; width:80%;" src="images/features.jpg" alt="Konviv Features" /></p>
 
@@ -605,6 +605,17 @@
 			};
 			document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
 	</script>
+
+	<script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+			<script>
+			function showMailingPopUp2() {
+			    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"bbe6edd96b05a24089b614b98","lid":"b7b7438ba7"}) })
+			    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+			};
+			document.getElementById("open-popup-2").onclick = function() {showMailingPopUp2()};
+	</script>
+
 	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
 	<script>
