@@ -221,16 +221,6 @@
 		<center>
 		<div style="max-width:800px; text-align:center; padding:100px 20px;">
 		<h1 class="bottommargin font-body" style="text-align:center; font-size: 30px; font-family:'Nunito'!important; font-weight:400;">Within our lifetime, all individuals around the world will have a widely recognized financial identity with cutting-edge tools to be active participants and creators in the world economy.</h1>
-		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
-			<script>
-			function showMailingPopUp() {
-			    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"bbe6edd96b05a24089b614b98","lid":"b7b7438ba7"}) })
-			    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-			};
-
-			document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-			</script>
 		</div>
 		</center>
 
@@ -408,10 +398,18 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 
-	<!-- Google Map JavaScripts
+	<!-- Mailchimp Popup
 	============================================= -->
-	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>
-	<script type="text/javascript" src="js/jquery.gmap.js"></script>
+	<script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+			<script>
+			function showMailingPopUp() {
+			    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"bbe6edd96b05a24089b614b98","lid":"b7b7438ba7"}) })
+			    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+			};
+
+			document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+	</script>
 
 	<!-- Footer Scripts
 	============================================= -->
