@@ -222,7 +222,18 @@
 		<div style="max-width:800px; text-align:center; padding:100px 20px;">
 		<h1 class="bottommargin font-body" style="text-align:center; font-size: 30px; font-family:'Nunito'!important; font-weight:400;">Within our lifetime, all individuals around the world will have a widely recognized financial identity with cutting-edge tools to be active participants and creators in the world economy.</h1>
 		</div>
-		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"bbe6edd96b05a24089b614b98","lid":"b7b7438ba7"}) })</script>
+		<button id="open-popup">Join Our Pilot</button>
+		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+			<script>
+			function showMailingPopUp() {
+			    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"bbe6edd96b05a24089b614b98","lid":"b7b7438ba7"}) })
+			    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+			};
+
+			document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+			</script>
+
 		</center>
 
 		<div style="margin-top:-30px; width:101%;"><img src="images/screen1.png" alt="people on mobile phones" /></div>
